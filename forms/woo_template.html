@@ -154,35 +154,65 @@
 			<div class="row">
 				<div class="col-md-2">
 					<strong>Product Code</strong><br/>
-					<loopstart:shoplst:>
-						$itemcode
-					<loopend>
 				</div>
 				<div class="col-md-5">
 					<strong>Item Description</strong><br/>
-					<loopstart:shoplst:>
-						$itemdesc
-					<loopend>
 				</div>
 				<div class="col-md-1">
 					<strong>Quantity</strong><br/>
-					<loopstart:shoplst:>
-						$itemquan
-					<loopend>
 				</div>
 				<div class="col-md-2">
 					<strong>Item Price</strong><br/>
-					<loopstart:shoplst:>
-						$transactioncurrency &nbsp;$itempric
-					<loopend>
 				</div>
 				<div class="col-md-2">
 					<strong>Total Price</strong><br/>
-					<loopstart:shoplst:>
-						$transactioncurrency &nbsp;$itemtota
-					<loopend>
 				</div>
 			</div>
+            
+			<div class="row">
+                <loopstart:shoplst:>
+				<div class="col-md-2">
+						$itemcode
+				</div>
+				<div class="col-md-5">
+						$itemdesc
+				</div>
+				<div class="col-md-1">
+						$itemquan
+				</div>
+				<div class="col-md-2">
+						$transactioncurrency &nbsp;$itempric
+				</div>
+				<div class="col-md-2">
+						$transactioncurrency &nbsp;$itemtota					
+				</div>
+				<loopend>
+			</div>
+			<hr class="mt-5 mb-5">
+			<div class="row">
+            	<div class="col-md-10">
+
+                </div>
+                <div class="col-md-2">    
+                  <div>
+                      <strong>Subtotal:</strong><br/>
+                      $transactioncurrency &nbsp;$subtotal
+                  </div>
+                  <div>
+                      <strong>Shipping:</strong><br/>
+                      $transactioncurrency &nbsp;$shippingcharge
+                  </div>
+                  <div>
+                      <strong>VAT:</strong><br/>
+                      $transactioncurrency &nbsp;$transactiontax
+                  </div>
+                  <div>
+                      <strong>Total:</strong><br/>
+                      $transactioncurrency &nbsp;$transactionamount
+                  </div>
+                </div>
+			</div>
+            
 		</div>
 		<form action="/secutran/transactionsi1.php" method="post" name="basketform" id="basketform" onsubmit="return validateForm(this)">
 			<div class="row">

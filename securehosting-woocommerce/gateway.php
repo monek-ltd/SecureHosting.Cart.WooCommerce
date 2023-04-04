@@ -28,7 +28,7 @@ class SecureHostingGateway extends WC_Payment_Gateway
     function init_key_variables()
     {
         // base URL for the WooCommerce API for this payment gateway.
-        $this->apiUrl = WooCommerce::api_request_url($this->apiSuffix);
+        $this->apiUrl = (new WooCommerce)->api_request_url($this->apiSuffix);
 
         // unique identifier for the gateway, also used when routing to the 'Settings' page via WooCommerce payment methods.
         $this->id = 'securehosting';

@@ -1,3 +1,10 @@
+**⚠️ DEPRECATED: This plugin is no longer maintained or supported.**
+
+If you are a SecureHosting customer needing to use WooCommerce, please migrate to our **TransactDirect** plugin:  
+https://en-gb.wordpress.org/plugins/monek-checkout/
+
+Please note: You will need to move from the SecureHosting platform to use the new plugin.
+
 SecureHosting Payment Gateway for WooCommerce
 ============================================
 
